@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".registration.Registration"
+    android:clickable="true">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="31dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp" />
+
+    <TextView
+        android:id="@+id/reg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:textColor="@color/text_color"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toTopOf="@+id/top_line" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/line_right"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/reg_txt" />
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="имя"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edit_custom"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/line_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/name_txt"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/surname_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="фамилия"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_custom"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/line_right"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/surname_txt"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/room_num_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="номер палаты"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/surname" />
+
+    <EditText
+        android:id="@+id/room_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edit_custom"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/line_right"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/room_num_txt"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/bed_num_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="номер койки"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/room_num" />
+
+    <EditText
+        android:id="@+id/bed_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edit_custom"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/line_right"
+        app:layout_constraintStart_toStartOf="@+id/left_line"
+        app:layout_constraintTop_toBottomOf="@+id/bed_num_txt"
+        android:inputType="number"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/button_line_begin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/button_line_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="50dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn"
+        android:text="зарегистрироваться"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_line_end"
+        app:layout_constraintStart_toStartOf="@+id/button_line_begin"
+        app:layout_constraintTop_toBottomOf="@+id/bed_num" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
